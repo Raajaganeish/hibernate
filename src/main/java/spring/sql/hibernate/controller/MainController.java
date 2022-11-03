@@ -140,4 +140,9 @@ public class MainController {
         iProjectsService.deleteById(id);
         return iProjectsService.findAll();
     }
+
+    @GetMapping(value = {"/testRestClient"})
+    public String getTestRestClient() {
+        return "sample_text";
+    }
 }
